@@ -3,13 +3,74 @@
   }
   body {background-color: #ececec;}
 
-
+/* 
   .language {
     margin: -40px;
+  } */
+
+  div.gallery {
+    z-index:100;
+    margin: 15px;
+    margin-top: 5vh;
+    border: 1px solid rgba(204, 204, 204, 0);
+    float: left;
+    width: 220px;
+    margin-left: 3%;
+    width: 220px;
+    height:220px;
+  }
+  
+  div.gallery:hover {
+    z-index:100;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10%;
+    width: 220px;
+    height:220px;
+  }
+  
+  div.gallery img {
+    z-index:100;
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    z-index:100;
+    padding: 15px;
+    text-align: center;
+    font-weight:bold;
+    font: 18px "cocogoose";
+    text-align: center;
+    margin: -50px;
   }
 
+  div.gallery:hover .text {
+    transform: translateY(-20px);
+    opacity: 1;
+    transition: all 0.7s ease-out;
+    font-size: 25px;
+   color: white;
+  }
+
+  div.gallery:hover .text-2 {
+    transform: translateY(-20px);
+    opacity: 1;
+    transition: all 0.7s ease-out;
+    font-size: 25px;
+   color: white;
+  }
+
+
+  div.gallery:hover .text-3 {
+    transform: translateY(-20px);
+    opacity: 1;
+    transition: all 0.7s ease-out;
+    font-size: 25px;
+   color: white;
+  }
   
   
+/*   
   .column {
     float: left;
     margin-top: 10vh;
@@ -26,38 +87,50 @@
     margin: -50px;
   }
   /* Clearfix (clear floats) */
-  .row::after {
+  /* .row::after {
     
     content: "";
     clear: both;
     display: table;
   }
-.lang-img {
-    border: 1px solid #000000;
+   */
+   .lang-img {
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 10%;
-}
+   }
+   
+
 .text {
-    text-align: left;
+    text-align: center;
     position: absolute;
-    bottom: 20px;
-    left: 38px;
-    opacity: 0;
-    font: 14px "hanson";
+    bottom: 190px;
+    left: 100px;
+    opacity: 00;
+    font: 10px "PT Mono";
+    color: rgb(white); 
+  }
+
+  .text-2 {
+    text-align: center;
+    position: absolute;
+    bottom: 190px;
+    left: 350px;
+    opacity: 00;
+    font: 10px "PT Mono";
+    color: rgb(white); 
+  }
+
+  .text-3 {
+    text-align: center;
+    position: absolute;
+    bottom: 190px;
+    left: 630px;
+    opacity: 00;
+    font: 10px "PT Mono";
+    color: rgb(white); 
   }
   
-  .lang-img:hover .text {
-    transform: translateY(-20px);
-    opacity: 1;
-    transition: all 0.7s ease-out;
-    font-size: 25px;
-    color: rgb(white);
-    text-shadow: 0 0 5px #2041af;
-  }
-  
-  .lang-img:focus {
-    background-color: #fff;
-    color: #333;
-  }
+
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 500px) {
@@ -81,9 +154,9 @@
     
     padding-right: 40px;
     padding-left: 50px;
-    position: absolute;
+    position: relative;
     top: 18px;
-    left: 1370px;
+    left: 1170px;
 
     /* display: flex; */
 
@@ -99,9 +172,9 @@
     
     padding-right: 40px;
     padding-left: 50px;
-    position: absolute;
+    position: relative;
     top: 18px;
-    left: 1240px;
+    left: 1040px;
 
     /* display: flex; */
 
@@ -117,9 +190,9 @@
     
     padding-right: 40px;
     padding-left: 50px;
-    position: absolute;
+    position: relative;
     top: 18px;
-    left: 1140px;
+    left: 40px;
 
     /* display: flex; */
 
@@ -155,13 +228,13 @@ input {
 }
 
 .infobutton4 {
-    position: absolute;
-    bottom: 320px;
-    left: 27%;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 50%;
-    display: inline-block;
-  }
+  position: absolute;
+  bottom: 320px;
+  left: 27%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
 
   .imgbox {
 
@@ -257,7 +330,7 @@ input {
     position: absolute;
     font: 13px "PT Mono";
     right: 0;
-    top: 39.5%;
+    top: 35.5%;
     left: 10%;
     width: 70%;
 }
