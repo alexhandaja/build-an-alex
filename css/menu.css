@@ -1,0 +1,51 @@
+.rotate img{
+    transition: 1s ease;
+    }
+    
+    .rotate img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+    }
+    
+    .cards {
+        background-color: transparent;
+        width: 800px;
+        height: 500px;
+        perspective: 1000px;
+        margin-left: 66vh;
+        margin-top: 30vh;
+      }
+      
+      button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #00000000;
+  border: 1px solid #29292900;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem;
+  transition: 500ms;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+    left: 50%;
+  /* bring your own prefixes */
+  /* transform: translate(-50%, -50%); */
+}
+.button:hover {
+  background-color:#ffffff;
+  transition: 0.1s;
+}
+
+.startbutton {
+    position: absolute;
+    bottom: 40px;
+    left: 44%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
